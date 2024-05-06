@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Globaltechno Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+        <!--space for header with an h1 and a p-->
+
+        <header>
+            <h1 id="title">Globaltechno OÜ Survey Form</h1>
+            <p id="description">We are creating a new company.Thank for your help!</p>
+
+        </header>
+
+        <!--space for the form-->
+
+      <form id="survey-form">
+
+        <div>
+        <label id="name-label">Name</label>
+        <input id="name" type="text" placeholder="Enter your name" required>
+        </div>
+
+        <div>
+        <label id="email-label">Email</label>
+        <input id="email" type="email" placeholder="Enter your email" required>
+        </div>
+        
+        <div>
+        <label id="number-label">Age (optional)</label>
+        <input id="number" type="number" min="18" max="90" placeholder="Age" required>
+        </div>
+
+        <div>
+            <p>Which option best describes your current role?</p>
+            <select id="dropdown" required>
+                <option value="" disabled selected>Select current role</option>
+                <option value="student">Student</option>
+                <option value="junior developer">Junior Developer</option>
+                <option value="senior developer">Senior Developer</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+
+        <div>
+            <p>Would like to work for Globaltechno?</p>
+            <label><input type="radio" name="like" value="sure">Sure</label>
+            <label><input type="radio" name="like" value="depending-money">Depending of money</label>
+            <label><input type="radio" name="like" value="no">No</label>
+        </div>
+
+        <div>
+            <p>What type of work would you like?</p>
+            <label><input value="remote" type="checkbox">Remote</label>
+            <label><input value="office" type="checkbox">Office</label>
+            <label><input value="mix" type="checkbox">Mix</label>
+            
+        </div>
+
+        <div>
+            <p>Do you want to add something?</p>
+            <textarea id="textarea" class="input-texterea" placeholder="Enter your comment here..."></textarea>
+        </div>
+
+        <button type="submit" id="submit" class="submit-button">Submit</button>
+
+        
+
+      </form>   
+    
+</body>
+</html>
